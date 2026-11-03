@@ -144,6 +144,9 @@ version is two files:
 - `<app id>-<version>.app.json`: its details (name, description, icon, colour, version, author), so Knob Hub can list
   apps without downloading them.
 
+The **All apps** release lists every app. It holds no app files, so Knob Hub ignores it; it's there so GitHub's
+"Latest" mark points at an overview instead of one app.
+
 Knob Hub offers the newest version of each app and downloads only over HTTPS. Before installing, it checks that the
 download is the app the list showed.
 
