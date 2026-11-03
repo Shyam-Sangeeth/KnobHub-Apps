@@ -23,6 +23,7 @@
   - [AudioDesk](#audiodesk)
   - [Counter](#counter)
   - [Displays](#displays)
+- [Making your own app](#making-your-own-app)
 - [How releases are laid out](#how-releases-are-laid-out)
 - [Publishing an app](#publishing-an-app)
 
@@ -124,6 +125,16 @@ Picks the main display from the knob: the one with the Start menu and the taskba
 
 **Needs:** Knob Hub and Knob OS built from 3 November 2026 on ([3fa0cc7](https://github.com/Shyam-Sangeeth/KnobHub/commit/3fa0cc7)), which draw its cards.
 
+## Making your own app
+
+The [wiki](https://github.com/Shyam-Sangeeth/KnobHub-Apps/wiki) explains how to make a Knob Hub app, from setting up to publishing: a step-by-step
+tutorial, how apps work, every screen the knob can show, icons, testing, design guidelines and troubleshooting. Its
+[For AI agents](https://github.com/Shyam-Sangeeth/KnobHub-Apps/wiki/For-AI-agents) page has all of it on one page for an AI coding agent.
+
+To suggest your app for this list, [open an issue](https://github.com/Shyam-Sangeeth/KnobHub-Apps/issues) with a link
+to its source code; apps here are reviewed before they're released. You can also publish apps in a repository of
+your own: see [Publishing](https://github.com/Shyam-Sangeeth/KnobHub-Apps/wiki/Publishing).
+
 ## How releases are laid out
 
 Each release is one version of one app, tagged `<app id>-v<version>` (for example `audiodesk-v1.0.0`), with two
@@ -139,7 +150,7 @@ download is the app the list showed.
 ## Publishing an app
 
 The apps' source code is in the [Knob Hub repository](https://github.com/Shyam-Sangeeth/KnobHub/tree/main/hub/Plugins),
-together with a guide to [making an app](https://github.com/Shyam-Sangeeth/KnobHub#making-an-app). To publish:
+and [the wiki](https://github.com/Shyam-Sangeeth/KnobHub-Apps/wiki) explains how to make one. To publish one of them:
 
 1. Bump `version` in the app's `app.json`.
 2. Run `hub/Plugins/pack-release.ps1` in the Knob Hub repository. It builds every app and creates a release here for
