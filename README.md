@@ -137,12 +137,12 @@ your own: see [Publishing](https://github.com/Shyam-Sangeeth/KnobHub-Apps/wiki/P
 
 ## How releases are laid out
 
-Each release is one version of one app, tagged `<app id>-v<version>` (for example `audiodesk-v1.0.0`), with two
-files:
+Each app has one release, tagged with the app's id (for example `audiodesk`), that holds every version of it. Each
+version is two files:
 
-- `<app id>.knobapp`: the app (a zip of its `app.json` and DLL).
-- `<app id>.app.json`: its details (name, description, icon, colour, version, author), so Knob Hub can list apps
-  without downloading them.
+- `<app id>-<version>.knobapp`: the app (a zip of its `app.json` and DLL), for example `audiodesk-1.0.2.knobapp`.
+- `<app id>-<version>.app.json`: its details (name, description, icon, colour, version, author), so Knob Hub can list
+  apps without downloading them.
 
 Knob Hub offers the newest version of each app and downloads only over HTTPS. Before installing, it checks that the
 download is the app the list showed.
@@ -153,7 +153,8 @@ The apps' source code is in the [Knob Hub repository](https://github.com/Shyam-S
 and [the wiki](https://github.com/Shyam-Sangeeth/KnobHub-Apps/wiki) explains how to make one. To publish one of them:
 
 1. Bump `version` in the app's `app.json`.
-2. Run `hub/Plugins/pack-release.ps1` in the Knob Hub repository. It builds every app and creates a release here for
-   each version not released yet (it needs the [GitHub CLI](https://cli.github.com/), logged in).
+2. Run `hub/Plugins/pack-release.ps1` in the Knob Hub repository. It builds every app and adds each version not
+   released yet to its app's release here, creating the release for a new app (it needs the
+   [GitHub CLI](https://cli.github.com/), logged in).
 
 Knob Hub users then see **Update** on the app's tile.
