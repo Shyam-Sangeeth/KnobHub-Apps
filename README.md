@@ -11,6 +11,7 @@
   <img src="docs/audiodesk/audiodesk-channel-controls.png" width="160" alt="An AudioDesk channel" />
   <img src="docs/counter/home-counter.png" width="160" alt="Counter on the knob's Home ring" />
   <img src="docs/counter/counter-25.png" width="160" alt="Counter" />
+  <img src="docs/displays/displays-main.png" width="160" alt="Displays, the main display" />
 </p>
 
 ---
@@ -21,6 +22,7 @@
 - [Apps](#apps)
   - [AudioDesk](#audiodesk)
   - [Counter](#counter)
+  - [Displays](#displays)
 - [How releases are laid out](#how-releases-are-laid-out)
 - [Publishing an app](#publishing-an-app)
 
@@ -49,6 +51,7 @@ order, turn them on or off the knob, change their settings, and remove them.
 |---|---|---|
 | [AudioDesk](#audiodesk) | 1.0.2 | Channels, volume, Sonar and output devices of [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk) |
 | [Counter](#counter) | 1.0.0 | A small example: counts up and down as you turn the knob |
+| [Displays](#displays) | 1.0.0 | Picks which display is the main one |
 
 ### AudioDesk
 
@@ -97,6 +100,29 @@ of a ring that fills once every 20 counts; each new lap fills in a new random br
     <td align="center"><img src="docs/counter/counter-25.png" width="200" /><br />25: the second lap</td>
   </tr>
 </table>
+
+### Displays
+
+Picks the main display from the knob: the one with the Start menu and the taskbar's clock, where new windows open.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/displays/home-displays.png" width="200" /><br />On the Home ring</td>
+    <td align="center"><img src="docs/displays/displays-main.png" width="200" /><br />The main display</td>
+    <td align="center"><img src="docs/displays/displays-other.png" width="200" /><br />Another display</td>
+  </tr>
+</table>
+
+- **Cards:** each display Windows shows the desktop on is a card with its monitor's name. The main display comes
+  first, with a green tick, then the others left to right as they're arranged.
+- **Switching:** turn the knob to go through the displays, and press it (or tap the card) to make the one on show the
+  main display, like **Make this my main display** in Windows' Settings. The displays keep their places round it, and
+  the new main display moves to the front with the knob still on it. Windows may black out the screens for a moment
+  while it switches.
+- **In step with Windows:** displays plugged in or out, or a main display chosen in Settings, show up while the app
+  is open.
+
+**Needs:** Knob Hub and Knob OS built from 3 November 2026 on ([3fa0cc7](https://github.com/Shyam-Sangeeth/KnobHub/commit/3fa0cc7)), which draw its cards.
 
 ## How releases are laid out
 
