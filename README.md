@@ -23,6 +23,7 @@
   - [AudioDesk](#audiodesk)
   - [Counter](#counter)
   - [Displays](#displays)
+  - [Timer](#timer)
 - [Making your own app](#making-your-own-app)
 - [How releases are laid out](#how-releases-are-laid-out)
 - [Publishing an app](#publishing-an-app)
@@ -57,6 +58,7 @@ order, turn them on or off the knob, change their settings, and remove them.
 | [AudioDesk](#audiodesk) | 1.0.3 | Channels, volume, Sonar and output devices of [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk) |
 | [Counter](#counter) | 1.0.0 | A small example: counts up and down as you turn the knob |
 | [Displays](#displays) | 1.0.0 | Picks which display is the main one |
+| [Timer](#timer) | 1.0.0 | A countdown timer that keeps the knob's screen on while it runs |
 
 ### AudioDesk
 
@@ -133,6 +135,29 @@ Picks the main display from the knob: the one with the Start menu and the taskba
 
 **Needs:** [Knob Hub](https://github.com/Shyam-Sangeeth/KnobHub/releases/latest) 1.0.0 or newer, with Knob OS 1.0.0 on
 the knob, which draw its cards.
+
+### Timer
+
+A countdown timer: turn to set it, press to start.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/timer/home-timer.png" width="200" /><br />On the Home ring</td>
+    <td align="center"><img src="docs/timer/timer.png" width="200" /><br />Set</td>
+    <td align="center"><img src="docs/timer/timer-running.png" width="200" /><br />Running</td>
+    <td align="center"><img src="docs/timer/timer-done.png" width="200" /><br />Done</td>
+  </tr>
+</table>
+
+- **Setting it:** turn the knob. It goes a minute a click up to 15 minutes, five minutes a click up to an hour, then a
+  quarter of an hour a click up to 3 hours. It starts at 5 minutes and remembers the last time you set.
+- **Running:** press to start. The ring empties as the time runs down, and the knob's screen stays on (no timeout, no
+  dimming) until it's done, even after you go back to Home.
+- **Pausing:** press to pause; the screen may sleep then. Press again to carry on, or turn to set it afresh.
+- **Done:** **Time's up** shows over whatever the knob shows and wakes it (with a buzz on a knob with vibration).
+
+**Needs:** [Knob Hub](https://github.com/Shyam-Sangeeth/KnobHub/releases/latest) 1.0.1 or newer, with Knob OS 1.0.1 on
+the knob (to keep its screen on).
 
 ## Making your own app
 
