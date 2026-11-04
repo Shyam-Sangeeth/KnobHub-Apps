@@ -29,6 +29,10 @@
 
 ## Installing an app
 
+If you don't have Knob Hub yet, download its installer from
+[Knob Hub's latest release](https://github.com/Shyam-Sangeeth/KnobHub/releases/latest) and see its
+[Getting started](https://github.com/Shyam-Sangeeth/KnobHub#getting-started).
+
 In Knob Hub, go to the **Apps** page and click **Add apps**. It lists the apps released here as tiles: search for
 one, then click **Install**, or **Update** when a newer version is out.
 
@@ -50,7 +54,7 @@ order, turn them on or off the knob, change their settings, and remove them.
 
 | App | Version | What it does |
 |---|---|---|
-| [AudioDesk](#audiodesk) | 1.0.2 | Channels, volume, Sonar and output devices of [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk) |
+| [AudioDesk](#audiodesk) | 1.0.3 | Channels, volume, Sonar and output devices of [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk) |
 | [Counter](#counter) | 1.0.0 | A small example: counts up and down as you turn the knob |
 | [Displays](#displays) | 1.0.0 | Picks which display is the main one |
 
@@ -62,7 +66,7 @@ mute, whether each goes through SteelSeries Sonar, and where it plays.
 <table>
   <tr>
     <td align="center"><img src="docs/audiodesk/audiodesk-channels.png" width="200" /><br />Channels</td>
-    <td align="center"><img src="docs/audiodesk/audiodesk-channels-muted-switching.png" width="200" /><br />Game muted, Aux switching</td>
+    <td align="center"><img src="docs/audiodesk/audiodesk-switching.png" width="200" /><br />While AudioDesk switches</td>
     <td align="center"><img src="docs/audiodesk/audiodesk-channel-controls.png" width="200" /><br />A channel</td>
   </tr>
   <tr>
@@ -73,8 +77,11 @@ mute, whether each goes through SteelSeries Sonar, and where it plays.
 </table>
 
 - **Channels:** each channel is a ring in its colour, filled as far as its volume, with the device it plays on inside
-  and a Sonar badge while it goes through Sonar. Muted channels are crossed out, and a spinning arc shows a device
-  switch. Below are **Sonar** (every channel through Sonar) and **Headset | Home Theater**.
+  and a Sonar badge while it goes through Sonar. Muted channels are crossed out. Below are **Sonar** (every channel
+  through Sonar) and **Headset | Home Theater**.
+- **While AudioDesk switches** (a device, Sonar on or off, Headset | Home Theater), the screen dims and a spinner
+  turns in the middle until it's done. Meanwhile the knob ignores turns, presses and taps, so nothing else starts;
+  Back still works.
 - **A channel** (press it): the volume, the channel's own Sonar on/off, and its output device. Press the knob to move
   between them and turn to change the selected one. Tap the icon or the volume %, or press twice quickly, to mute.
 - **In step with AudioDesk:** changes on the knob show up in AudioDesk and the other way round. While a channel goes
@@ -82,8 +89,9 @@ mute, whether each goes through SteelSeries Sonar, and where it plays.
 - **When AudioDesk isn't running,** the knob says so, with a **Start AudioDesk** button when it can find AudioDesk on
   the PC, and goes back to where you were once AudioDesk is running again.
 
-**Needs:** [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk/releases/latest) 1.0.0 or newer, running, with
-**Knob support** on in AudioDesk's Settings tab (it's on by default).
+**Needs:** [Knob Hub](https://github.com/Shyam-Sangeeth/KnobHub/releases/latest) 1.0.0 or newer with Knob OS 1.0.0
+on the knob (for the spinner), and [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk/releases/latest) 1.0.0 or
+newer, running, with **Knob support** on in AudioDesk's Settings tab (it's on by default).
 
 **Settings** (on its row on Knob Hub's Apps page): **Volume step**, how much each click of the knob changes the volume
 (1%, 2% by default, 5% or 10%).
@@ -123,7 +131,8 @@ Picks the main display from the knob: the one with the Start menu and the taskba
 - **In step with Windows:** displays plugged in or out, or a main display chosen in Settings, show up while the app
   is open.
 
-**Needs:** Knob Hub and Knob OS built from 3 November 2026 on ([3fa0cc7](https://github.com/Shyam-Sangeeth/KnobHub/commit/3fa0cc7)), which draw its cards.
+**Needs:** [Knob Hub](https://github.com/Shyam-Sangeeth/KnobHub/releases/latest) 1.0.0 or newer, with Knob OS 1.0.0 on
+the knob, which draw its cards.
 
 ## Making your own app
 
