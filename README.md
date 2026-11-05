@@ -56,10 +56,10 @@ order, turn them on or off the knob, change their settings, and remove them.
 
 | App | Version | What it does |
 |---|---|---|
-| [AudioDesk](#audiodesk) | 1.0.3 | Channels, volume, Sonar and output devices of [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk) |
+| [AudioDesk](#audiodesk) | 1.0.4 | Channels, volume, Sonar and output devices of [AudioDesk](https://github.com/Shyam-Sangeeth/AudioDesk) |
 | [Counter](#counter) | 1.0.0 | A small example: counts up and down as you turn the knob |
 | [Displays](#displays) | 1.0.0 | Picks which display is the main one |
-| [Timer](#timer) | 1.0.0 | A countdown timer that keeps the knob's screen on while it runs |
+| [Timer](#timer) | 1.0.1 | A countdown timer that keeps the knob's screen on while it runs |
 
 ### AudioDesk
 
