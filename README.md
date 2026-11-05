@@ -12,6 +12,7 @@
   <img src="docs/counter/home-counter.png" width="160" alt="Counter on the knob's Home ring" />
   <img src="docs/counter/counter-25.png" width="160" alt="Counter" />
   <img src="docs/displays/displays-main.png" width="160" alt="Displays, the main display" />
+  <img src="docs/timer/timer-running.png" width="160" alt="Timer, running" />
 </p>
 
 ---
